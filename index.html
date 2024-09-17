@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>gpay</title>
+
+    <style>
+        body {
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+   
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    width: 95%;
+    background-color: #f7f7f7;
+    border-radius: 100px;
+    padding: 5px;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.profil img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+
+.card{
+    padding: 5px;
+    
+}
+.card img{
+    height: 200px;
+    width: 100%;
+}
+
+ .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+    background: transparent;
+} 
+
+.icon {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+} 
+.icon i{
+    position: relative;
+    font-size: 30px;
+    color: rgba(27, 27, 252, 0.548);
+  
+}
+.people{
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 20px;
+    background: transparent;
+   
+    
+   
+}
+.contact img{
+    height: 80px;
+    width: 80px;  
+    border-radius: 100px;
+}
+.btn-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.btn{
+    border-radius: 60px;
+    width: 20%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.btn:hover{
+    opacity: 2;
+}
+.menu {
+    width: 300px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+   
+}
+
+.icon {
+    
+    margin-right: 15px;
+}
+
+
+
+.menu-item:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+
+.footer button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #666666;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Pay by name or phone number">
+            
+            
+
+           
+        </div>
+        <div class="profil">
+            <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://i.ytimg.com/vi/9biY0ejidbQ/maxresdefault.jpg" alt="">
+    </div>
+
+    <div class="icons-grid">
+        <div class="icon">
+            <i class="fa-solid fa-qrcode"></i>
+            <p>Scan any QR code</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-address-book"></i>
+            <p>Pay contacts</p>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-amazon-pay"></i>
+            <p>Pay phone number</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-building-columns"></i>
+            <p>Bank transfer</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-at"></i>
+            <p>Pay UPI ID or number</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-image-portrait"></i>
+            <p>Self transfer</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-money-bill"></i>
+            <p>Pay bills</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-bolt"></i>
+            <p>Mobile recharge</p>
+ </div>
+   </div>
+
+   <div class="people">
+    <p>People</p>
+   </div>
+   <div class="contact">
+       <div>
+         <img src="https://t4.ftcdn.net/jpg/06/40/07/03/360_F_640070383_9LJ3eTRSvOiwKyrmBYgcjhSlckDnNcxl.jpg" alt="">
+         <p>NITHIN</p>
+       </div>
+       <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJ-HBU9h-vRWKPk94sfBzk1wyOTuHMo_Rtg&s" alt="">
+        <p>Sushma</p>
+       </div>
+       <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwvtCOa_A_-HSmhStZleR1Q-FB-G7D311Mw&s" alt="">
+        <p>Neha Shetty</p>
+       </div>
+       <div>
+        <img src="https://assets.gqindia.com/photos/5d67bccd92463800081c1bb4/4:3/w_1440,h_1080,c_limit/Prabhas%20movies%20.jpg" alt="">
+        <p>Prabhas</p>
+       </div>
+       <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXIB4jFeI9CacEhVItva6F71Wu7me42b1xA&s" alt="">
+        <p>Mahesh </p>
+       </div>
+       <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5O2ZUOwBs3YwKXNzwOpXLUeOmwDuqLeosLA&s" alt="">
+        <p>Ranbir</p>
+       </div>
+       <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO470pxi8lVvqq40FJOWdfKIUCyiqZINay3w&s" alt="">
+        <p>Bhagya</p>
+       </div>
+       <div>
+        <img src="https://cdn.tollywood.net/wp-content/uploads/2024/02/rashmika-696x392.webp" alt="">
+        <p>Rashmika</p>
+       </div>
+   </div>
+
+   <div class="people">
+      <p>Businesses & Orders</p>
+   </div>
+
+   <div class="contact">
+     <div>
+        <img src="https://play-lh.googleusercontent.com/4OOU73CI8knF4TByikeCEA1IOj3hb_AyXdV0Y2_XNikAoVan257QCO0ppXK9e3Z1ncY" alt="">
+        <p>Swiggy</p>
+     </div>
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0l_0ntbtLSPNDvn95a4PvM7RlcdWQPGsDOQ&s" alt="">
+        <p>Zomato</p>
+     </div>
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK8ALI0bfMHRMrZ58tdgF1_1JUjTVMDCBbVQ&s" alt="">
+         <p>OLA</p>
+     </div>
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-PV3PW6JQfLtN5KPKCPdloK4HMj7DitHcg&s" alt="">
+        <p>Volkswagan</p>
+     </div>
+   </div>
+
+   <div class="people">
+    <p>Bills & Recharge <br>No bills due.Try adding them</p>
+   </div>
+   <div class="icons-grid">
+    <div class="icon">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <p>Mobile <br>recharge</p>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-tv"></i>
+        <p>DTH/Cable <br> Tv</p>
+    </div>
+    <div class="icon">
+        <i class="fa-regular fa-lightbulb"></i>
+        <p>Electricity</p>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-car"></i>
+        <p>FASTTag <br>recharge</p>
+    </div>
+   </div>
+   <div class="btn-main">
+    <button class="btn">
+        <p>View all</p>
+     </button>
+   </div>
+
+   </div>
+   <div class="people">
+    <p>Offers & rewards</p>
+ </div>
+
+ <div class="contact">
+    <div>
+        <img src="https://cdn0.iconfinder.com/data/icons/rewards-17/24/tropy_champion_rewards_color_f-128.png" alt="">
+        <p>Rewards</p>
+    </div>
+    <div>
+        <img src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/128/offers.png" alt="">
+        <p>Offers</p>
+    </div>
+    <div>
+        <img src="https://cdn-icons-png.flaticon.com/128/5044/5044045.png" alt="">
+        <p>Referrals</p>
+    </div>
+ </div>
+</div>
+<div class="people">
+ <p>Manage Your money</p>
+</div>
+
+   
+   <div class="menu"></div>
+        <div class="menu-item">
+            <i class="icon">&#x1F5C3;</i>
+            <span class="menu-text">Check your CIBIL score for free</span>
+        </div>
+        <div class="menu-item">
+            <i class="icon">&#x1F4C8;</i>
+            <span class="menu-text">See transaction history</span>
+        </div>
+        <div class="menu-item">
+            <i class="icon">&#x1F3E6;</i>
+            <span class="menu-text">Check bank balance</span>
+        </div>
+    </div>
+    
+   
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ6KNqDdtr7ldx1cHcjxyUGuVUGbdn4z_T30d0c3ExWySk1F7JNnjXB-8T3kbeT5w8ub8&usqp=CAU" alt="">
+    </div>
+
+
+    <div class="footer">
+        <button>Activate UPI Lite</button>
+        <p>UPI ID: gudugunti7019265620@oksbi</p>
+    </div>
+
+    
+</body>
+</html>
